@@ -1,7 +1,8 @@
 import openai
 import requests
+import config
 
-openai.api_key='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'
+openai.api_key=config.api_key
 
 def get_transcription():
     audio_file = open("testSpeechDec.m4a", "rb")
